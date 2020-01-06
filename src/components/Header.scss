@@ -1,0 +1,11 @@
+#Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+  border: 1px solid #ddd;
+
+  a:last-of-type {
+    justify-self: end;
+  }
+
+}

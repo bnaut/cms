@@ -1,15 +1,14 @@
 const initialState = {
   loggedIn: false,
-  user: null,
 }
 
 function auth(state = initialState, action) {
   
   switch (action.type) {
-    case 'LOGIN_SUCCESS':
+    case 'TOGGLE_LOGIN':
       return {
         ...state,
-        loggedIn: action.loggedInStatus
+        loggedIn: !state.loggedIn,
       }
 
     default:
