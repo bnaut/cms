@@ -4,7 +4,8 @@ import AddTodo from '../containers/AddTodo';
 import VisibleTodoList from '../containers/VisibleTodoList';
 
 const Home = () => (
-  <div>
+  <div className='content'>
+    <h3>Lucas's CMS</h3>
     <AddTodo />
     <VisibleTodoList />
     <Footer />
