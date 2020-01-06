@@ -19,7 +19,8 @@ class EditHours extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    axios.post('http://localhost:3000/github', {
+    //axios.post('http://localhost:3000/github', {
+    axios.post('https://rgms7e8f9l.execute-api.us-east-1.amazonaws.com/dev/github', {
       "Monday": this.state.value
     }).then(response => {
       console.log('success')
