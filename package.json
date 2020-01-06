@@ -6,6 +6,7 @@
     "react-scripts": "^3.0.0"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -15,7 +16,7 @@
     "redux": "^4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8000 react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=node"
