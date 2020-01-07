@@ -7,10 +7,11 @@ import Hours from '../components/Hours';
 const Home = () => (
   <div className='content'>
     <h3>Lucas's CMS</h3>
-    <AddTodo />
+    {/*<AddTodo />
     <VisibleTodoList />
-    <Hours />
     <Footer />
+    */}
+    <Hours />
   </div>
 );
 
