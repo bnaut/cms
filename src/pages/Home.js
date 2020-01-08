@@ -29,6 +29,9 @@ const Home = () => (
       <Card>
         <h3>Team</h3>
       </Card>
+      <Card>
+        <h3>Misc</h3>
+      </Card>
 
 
     </Layout>

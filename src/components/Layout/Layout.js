@@ -22,6 +22,24 @@ const Layout = ({ children, style }) => {
         }}
       />
       <main style={style}>{children}</main>
+      <p 
+        style={{
+          color: `#4f566b`,
+          fontSize: `11px`,
+          position: `fixed`,
+          bottom: `15px`,
+          left: `15px`
+        }}
+      >
+        Proudly powered by 
+        <span 
+          style={{
+            color: `#3388dd`
+          }}
+        > 
+          {' Gather'}
+        </span>
+      </p>
     </div>
   )
 };
