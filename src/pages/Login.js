@@ -1,10 +1,17 @@
 import React from 'react';
 import LoginButton from '../containers/LoginButton';
+import Layout from '../components/Layout/Layout';
 
-const Home = () => (
-  <div className='content'>
+const Login = () => (
+  <>
+    <Layout 
+      style={{ 
+        padding: `20px 40px` 
+      }}
+    >
     <LoginButton />
-  </div>
+  </Layout>
+  </>
 );
 
-export default Home;
+export default Login;

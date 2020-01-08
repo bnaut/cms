@@ -5,7 +5,13 @@ class EditHours extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      monday: '',
+      tuesday: '',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -13,7 +19,7 @@ class EditHours extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({monday: event.target.value});
   }
 
   handleSubmit(event) {
@@ -33,10 +39,20 @@ class EditHours extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Set Monday's Hours:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
+        <label>Monday: <input type="text" value={this.state.monday} onChange={this.handleChange} /></label>
+        <br></br>
+        <label>Tuesday: <input type="text" value={this.state.tuesday} onChange={this.handleChange} /></label>
+        <br></br>
+        <label>Wednesday: <input type="text" value={this.state.wednesday} onChange={this.handleChange} /></label>
+        <br></br>
+        <label>Thursday: <input type="text" value={this.state.thursday} onChange={this.handleChange} /></label>
+        <br></br>
+        <label>Friday: <input type="text" value={this.state.friday} onChange={this.handleChange} /></label>
+        <br></br>
+        <label>Saturday: <input type="text" value={this.state.saturday} onChange={this.handleChange} /></label>
+        <br></br>
+        <label>Sunday: <input type="text" value={this.state.sunday} onChange={this.handleChange} /></label>
+        <br></br>
         <input type="submit" value="Submit" />
       </form>
     );
