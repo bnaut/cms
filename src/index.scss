@@ -11,3 +11,26 @@ body {
 .content {
   padding: 15px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2A2f45;
+}
+
+p, label, input, span {
+  color: #4f566b;
+}
+
+a, .link {
+  cursor: pointer;
+  color: #3297d3;
+  color: #556cd6;
+  text-decoration: none;
+  &:hover {
+    color: #2A2f45;
+
+  }
+}
+
+li {
+  list-style: none;
+}

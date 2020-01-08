@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { toggleLoginAction } from '../actions';
-import LoginButton from '../components/LoginButton';
+import LoginButton from '../components/LoginButton/LoginButton';
 
 const mapDispatchToProps = dispatch => ({
   toggleLogin: (val) => dispatch(toggleLoginAction(val))

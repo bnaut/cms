@@ -1,16 +1,9 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import AddTodo from '../containers/AddTodo';
-import VisibleTodoList from '../containers/VisibleTodoList';
-import Hours from '../components/Hours';
+import Hours from '../components/Hours/Hours';
 
 const Home = () => (
   <div className='content'>
     <h3>Lucas's CMS</h3>
-    {/*<AddTodo />
-    <VisibleTodoList />
-    <Footer />
-    */}
     <Hours />
   </div>
 );
