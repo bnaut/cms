@@ -2,6 +2,7 @@ import React from 'react';
 import Hours from '../components/Hours/Hours';
 import Layout from '../components/Layout/Layout';
 import Card from '../components/Card/Card';
+import Text from '../components/Inputs/Text/Text';
 
 const Home = () => (
   <>
@@ -12,9 +13,8 @@ const Home = () => (
     >
       <Card>
         <h3>Profile</h3>
-        <label>Business Name<input type='text'></input></label>
-        <br></br>
-        <label>Business Description<textarea></textarea></label>
+        <Text label="Business Name" labelid="name" />
+        <Text label="Business Description" labelid="description" />
       </Card>
       <Card>
         <h3>Hours</h3>
@@ -22,11 +22,9 @@ const Home = () => (
       </Card>
       <Card>
         <h3>Contact</h3>
-        <label>Address<input type='text'></input></label>
-        <br></br>
-        <label>Phone<input type='text'></input></label>
-        <br></br>
-        <label>Email<input type='text'></input></label>
+        <Text label="Address" labelid="address" />
+        <Text label="Phone" labelid="Phone" />
+        <Text label="Email" labelid="email" />
       </Card>
       <Card>
         <h3>Team</h3>

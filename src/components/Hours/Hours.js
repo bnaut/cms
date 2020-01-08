@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Text from '../Inputs/Text/Text';
 
 class EditHours extends React.Component {
   constructor(props) {
@@ -39,20 +40,14 @@ class EditHours extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>Monday: <input type="text" value={this.state.monday} onChange={this.handleChange} /></label>
-        <br></br>
-        <label>Tuesday: <input type="text" value={this.state.tuesday} onChange={this.handleChange} /></label>
-        <br></br>
-        <label>Wednesday: <input type="text" value={this.state.wednesday} onChange={this.handleChange} /></label>
-        <br></br>
-        <label>Thursday: <input type="text" value={this.state.thursday} onChange={this.handleChange} /></label>
-        <br></br>
-        <label>Friday: <input type="text" value={this.state.friday} onChange={this.handleChange} /></label>
-        <br></br>
-        <label>Saturday: <input type="text" value={this.state.saturday} onChange={this.handleChange} /></label>
-        <br></br>
-        <label>Sunday: <input type="text" value={this.state.sunday} onChange={this.handleChange} /></label>
-        <br></br>
+        <Text label="Monday" labelid="Monday" />
+        <Text label="Tuesday" labelid="tuesday" />
+        <Text label="Wednesday" labelid="Wednesday" />
+        <Text label="Thursday" labelid="Thursday" />
+        <Text label="Friday" labelid="Friday" />
+        <Text label="Saturday" labelid="Saturday" />
+        <Text label="Sunday" labelid="Sunday" />
+        {/*<label>Monday: <input type="text" value={this.state.monday} onChange={this.handleChange} /></label>*/}
         <input type="submit" value="Submit" />
       </form>
     );
