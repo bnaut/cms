@@ -1,8 +1,9 @@
 .text {
   display: grid;
-  grid-template-columns: 160px 1fr 30px;
+  grid-template-columns: 160px 1fr 34px;
   align-items: center;
   margin: 10px 0;
+  padding-right: 6px;
 
   input {
     justify-self: end;
@@ -19,8 +20,10 @@
   }
 
   .icon {
+    cursor: pointer;
+    width: 22px;
+    padding: 5px;
     fill: #2A2f45;
-    width: 12px;
     justify-self: end;
   }
 }
