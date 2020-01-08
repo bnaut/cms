@@ -8,14 +8,12 @@ import Login from './pages/Login';
 import rootReducer from './reducers';
 import './index.scss';
 
-import Header from './containers/Header';
 
 const store = createStore(rootReducer);
 
 render(
   <Provider store={store}>
     <Router>
-      <Header />
       <Route exact path="/" render={() => <Home />} />
       <Route exact path="/login" render={() => <Login />} />
     </Router>

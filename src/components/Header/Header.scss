@@ -1,8 +1,9 @@
 #Header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 15px;
-  border: 1px solid #ddd;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #f3f3f3;
 
   a:last-of-type {
     justify-self: end;
